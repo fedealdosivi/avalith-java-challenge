@@ -33,6 +33,11 @@ public class CallRest implements CommandLineRunner {
         }
     }
 
+    /**
+     * Runs the system
+     * @param strings
+     * @throws Exception
+     */
     @Override
     public void run(String... strings) throws Exception {
         callRestService();

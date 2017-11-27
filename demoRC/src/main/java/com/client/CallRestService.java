@@ -24,7 +24,7 @@ public class CallRestService implements CommandLineRunner{
 	 */
 	private static Person[] getAll(){
 		RestTemplate restTemplate = new RestTemplate();  
-		return restTemplate.getForObject("http://localhost:8080/persons/all", Person[].class);
+		return restTemplate.getForObject("http://localhost:8080/persons/", Person[].class);
 	}
 
 	/**
@@ -62,6 +62,7 @@ public class CallRestService implements CommandLineRunner{
 
 	/**
 	 * Calls the function to print the persons
+	 * Runs the system
 	 * @param args
 	 * @throws Exception
 	 */

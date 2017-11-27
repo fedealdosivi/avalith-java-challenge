@@ -36,7 +36,7 @@ public class CallRestService implements CommandLineRunner{
 	}
 
 	/**
-	 * Calls the function to print
+	 * Runs the system
 	 * @param args
 	 * @throws Exception
 	 */

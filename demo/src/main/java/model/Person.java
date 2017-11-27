@@ -32,6 +32,13 @@ public class Person {
 		this.age = age;
 	}
 
+	/**
+	 * Creates a new Person
+	 * @param id
+	 * @param firsName
+	 * @param lastName
+	 * @param age
+	 */
 	public Person(long id, String firsName, String lastName, int age) {
 		this.id = id;
 		this.firsName = firsName;
