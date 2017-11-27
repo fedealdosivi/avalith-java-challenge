@@ -11,11 +11,11 @@ public class CallRestService implements CommandLineRunner{
 
 	/**
 	 * Prints all person from list
-	 * Prints person with id = 1
+	 * Prints person with id given
 	 */
-	private static void callRestService(){
+	private static void callRestService(String id){
 		printAll(getAll());
-		printById(getPersonById("1"));
+		printById(getPersonById(id));
 	}
 
 	/**
@@ -67,7 +67,7 @@ public class CallRestService implements CommandLineRunner{
 	 */
 	@Override
 	public void run(String... args) throws Exception {
-		callRestService();
+		callRestService("1");
 		
 	}	
 }
